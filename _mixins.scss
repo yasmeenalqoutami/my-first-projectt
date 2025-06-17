@@ -1,22 +1,15 @@
-// transition
-@mixin custom-transition($property,$time) {
-    -webkit-transition: $property $time + s;
-    -o-transition: $property $time + s;
-    transition: $property $time + s;
-}
-
-// display flex
-@mixin d-flex() {
-    display: -webkit-box; 
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex; 
-    display: flex;
-}
-
-// circle 
-@mixin circle($wh) {
-    width: $wh + px;
-    height: $wh + px;
-    border-radius: 50%;
-}
+@import "mixins/alert.scss";
+@import "mixins/badges.scss";
+@import "mixins/background-variant.scss";
+@import "mixins/buttons.scss";
+@import "mixins/forms.scss";
+@import "mixins/icon.scss";
+@import "mixins/modals.scss";
+@import "mixins/popovers.scss";
+@import "mixins/page-header.scss";
+@import "mixins/vendor-prefixes.scss";
+@import "mixins/opacity.scss";
+@import "mixins/modals.scss";
+@import "mixins/inputs.scss";
+@import "mixins/dropdown.scss";
+@import "mixins/wizard.scss";

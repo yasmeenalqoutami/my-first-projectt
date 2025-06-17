@@ -1,192 +1,133 @@
-// Form control focus state
-//
-// Generate a customized focus state and for any input with the specified color,
-// which defaults to the `$input-focus-border-color` variable.
-//
-// We highly encourage you to not customize the default value, but instead use
-// this to tweak colors on an as-needed basis. This aesthetic change is based on
-// WebKit's default styles, but applicable to a wider range of browsers. Its
-// usability and accessibility should be taken into account with any change.
-//
-// Example usage: change the default blue border and shadow to white for better
-// contrast against a dark gray background.
-@mixin form-control-focus() {
-  &:focus {
-    color: $input-focus-color;
-    background-color: $input-focus-bg;
-    border-color: $input-focus-border-color;
-    outline: 0;
-    // Avoid using mixin so we can pass custom focus shadow properly
-    @if $enable-shadows {
-      box-shadow: $input-box-shadow, $input-focus-box-shadow;
-    } @else {
-      box-shadow: $input-focus-box-shadow;
+/* Form controls */
+@include form-control-placeholder(#6c757c, 1);
+
+.form-control{
+  border-color: lighten($black,5%);
+  border-radius: $border-radius-lg;
+  font-size: $font-size-sm;
+  @include transition-input-focus-color();
+
+
+  &:focus{
+    border-color: $primary;
+    background-color: $input-bg;
+    @include box-shadow(none);
+
+    & + .input-group-append .input-group-text,
+    & ~ .input-group-append .input-group-text,
+    & + .input-group-prepend .input-group-text,
+    & ~ .input-group-prepend .input-group-text{
+        border: 1px solid $primary;
+        border-left: none;
+        background-color: $transparent-bg;
     }
   }
+
+  .has-success &,
+  .has-error &,
+  .has-success &:focus,
+  .has-error &:focus{
+      @include box-shadow(none);
+  }
+
+  .has-danger &,
+  .has-success &{
+      &.form-control-success,
+      &.form-control-danger{
+          background-image: none;
+      }
+  }
+
+  & + .form-control-feedback{
+      border-radius: $border-radius-lg;
+      margin-top: -7px;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      vertical-align: middle;
+  }
+
+  .open &{
+      border-radius: $border-radius-lg $border-radius-lg 0 0;
+      border-bottom-color: $transparent-bg;
+  }
+
+  & + .input-group-append .input-group-text,
+  & + .input-group-prepend .input-group-text{
+      background-color: $white;
+  }
+
 }
 
+.has-success .input-group-append .input-group-text,
+.has-success .input-group-prepend .input-group-text,
+.has-success .form-control{
+    border-color: lighten($black,5%);
+}
 
-@mixin form-validation-state($state, $color, $icon) {
-  .#{$state}-feedback {
-    display: none;
-    width: 100%;
-    margin-top: $form-feedback-margin-top;
-    @include font-size($form-feedback-font-size);
-    color: $color;
-  }
+.has-success .form-control:focus,
+.has-success.input-group-focus .input-group-append .input-group-text,
+.has-success.input-group-focus .input-group-prepend .input-group-text{
+  border-color: darken($success, 10%);
+}
 
-  .#{$state}-tooltip {
-    position: absolute;
-    top: 100%;
-    z-index: 5;
-    display: none;
-    max-width: 100%; // Contain to parent when possible
-    padding: $form-feedback-tooltip-padding-y $form-feedback-tooltip-padding-x;
-    margin-top: .1rem;
-    @include font-size($form-feedback-tooltip-font-size);
-    line-height: $form-feedback-tooltip-line-height;
-    color: color-yiq($color);
-    background-color: rgba($color, $form-feedback-tooltip-opacity);
-    @include border-radius($form-feedback-tooltip-border-radius);
-  }
+.has-danger .form-control,
+.has-danger .input-group-append .input-group-text,
+.has-danger .input-group-prepend .input-group-text,
+.has-danger.input-group-focus .input-group-prepend .input-group-text,
+.has-danger.input-group-focus .input-group-append .input-group-text{
+    border-color: lighten($danger-states,5%);
+    color: $danger-states;
+    background-color: rgba(222,222,222, .1);
 
-  .form-control {
-    .was-validated &:#{$state},
-    &.is-#{$state} {
-      border-color: $color;
+    &:focus{
+        background-color: $transparent-bg;
+    }
+}
 
-      @if $enable-validation-icons {
-        padding-right: $input-height-inner;
-        background-image: $icon;
-        background-repeat: no-repeat;
-        background-position: center right $input-height-inner-quarter;
-        background-size: $input-height-inner-half $input-height-inner-half;
-      }
+.has-success,
+.has-danger{
+    &:after{
+        font-family: 'nucleo';
+        content: "\ea1b";
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: 13px;
+        color: $success;
+        font-size: 11px;
+    }
 
-      &:focus {
-        border-color: $color;
-        box-shadow: 0 0 0 $input-focus-width rgba($color, .25);
-      }
-
-      ~ .#{$state}-feedback,
-      ~ .#{$state}-tooltip {
-        display: block;
+    &.form-control-lg{
+      &:after{
+        font-size: 13px;
+        top: 24px;
       }
     }
-  }
 
-  // stylelint-disable-next-line selector-no-qualifying-type
-  textarea.form-control {
-    .was-validated &:#{$state},
-    &.is-#{$state} {
-      @if $enable-validation-icons {
-        padding-right: $input-height-inner;
-        background-position: top $input-height-inner-quarter right $input-height-inner-quarter;
+    &.has-label{
+      &:after{
+        top: 37px;
       }
     }
+
+
+    &.form-check:after{
+      display: none !important;
+    }
+
+    &.form-check .form-check-label{
+      color: $success;
+    }
+}
+
+.has-danger{
+  &:after{
+    content: "\ea48";
+    color: $danger-states;
   }
 
-  .custom-select {
-    .was-validated &:#{$state},
-    &.is-#{$state} {
-      border-color: $color;
-
-      @if $enable-validation-icons {
-        padding-right: $custom-select-feedback-icon-padding-right;
-        background: $custom-select-background, $icon $custom-select-bg no-repeat $custom-select-feedback-icon-position / $custom-select-feedback-icon-size;
-      }
-
-      &:focus {
-        border-color: $color;
-        box-shadow: 0 0 0 $input-focus-width rgba($color, .25);
-      }
-
-      ~ .#{$state}-feedback,
-      ~ .#{$state}-tooltip {
-        display: block;
-      }
-    }
-  }
-
-
-  .form-control-file {
-    .was-validated &:#{$state},
-    &.is-#{$state} {
-      ~ .#{$state}-feedback,
-      ~ .#{$state}-tooltip {
-        display: block;
-      }
-    }
-  }
-
-  .form-check-input {
-    .was-validated &:#{$state},
-    &.is-#{$state} {
-      ~ .form-check-label {
-        color: $color;
-      }
-
-      ~ .#{$state}-feedback,
-      ~ .#{$state}-tooltip {
-        display: block;
-      }
-    }
-  }
-
-  .custom-control-input {
-    .was-validated &:#{$state},
-    &.is-#{$state} {
-      ~ .custom-control-label {
-        color: $color;
-
-        &::before {
-          border-color: $color;
-        }
-      }
-
-      ~ .#{$state}-feedback,
-      ~ .#{$state}-tooltip {
-        display: block;
-      }
-
-      &:checked {
-        ~ .custom-control-label::before {
-          border-color: lighten($color, 10%);
-          @include gradient-bg(lighten($color, 10%));
-        }
-      }
-
-      &:focus {
-        ~ .custom-control-label::before {
-          box-shadow: 0 0 0 $input-focus-width rgba($color, .25);
-        }
-
-        &:not(:checked) ~ .custom-control-label::before {
-          border-color: $color;
-        }
-      }
-    }
-  }
-
-  // custom file
-  .custom-file-input {
-    .was-validated &:#{$state},
-    &.is-#{$state} {
-      ~ .custom-file-label {
-        border-color: $color;
-      }
-
-      ~ .#{$state}-feedback,
-      ~ .#{$state}-tooltip {
-        display: block;
-      }
-
-      &:focus {
-        ~ .custom-file-label {
-          border-color: $color;
-          box-shadow: 0 0 0 $input-focus-width rgba($color, .25);
-        }
-      }
-    }
+  &.form-check .form-check-label{
+    color: $danger-states;
   }
 }

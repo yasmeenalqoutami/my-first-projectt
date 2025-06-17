@@ -1,107 +1,238 @@
-// Button variants
-//
-// Easily pump out default styles, as well as :hover, :focus, :active,
-// and disabled options for all buttons
+.btn,
+.navbar .navbar-nav > a.btn{
+    border-width: $border-thick;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    margin:4px 1px;
+    border-radius: $border-radius-lg;
+    cursor: pointer;
 
-@mixin button-variant($background, $border, $hover-background: darken($background, 7.5%), $hover-border: darken($border, 10%), $active-background: darken($background, 10%), $active-border: darken($border, 12.5%)) {
-  color: color-yiq($background);
-  @include gradient-bg($background);
-  border-color: $border;
-  @include box-shadow($btn-box-shadow);
+    @include btn-styles($default, $default-states);
 
-  @include hover {
-    color: color-yiq($hover-background);
-    @include gradient-bg($hover-background);
-    border-color: $hover-border;
+    &:hover,
+    &:focus{
+        @include opacity(1);
+        outline: 0 !important;
+    }
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+         @include box-shadow(none);
+         outline: 0 !important;
+    }
+
+    .badge{
+      margin: 0;
+    }
+
+    &.btn-icon {
+        // see above for color variations
+        height: $icon-size-regular;
+        min-width: $icon-size-regular;
+        width: $icon-size-regular;
+        padding: 0;
+        font-size: $icon-font-size-regular;
+        overflow: hidden;
+        position: relative;
+        line-height: normal;
+
+        &.btn-simple{
+            padding: 0;
+        }
+
+        &.btn-sm{
+            height: $icon-size-sm;
+            min-width: $icon-size-sm;
+            width: $icon-size-sm;
+
+            .fa,
+            .far,
+            .fas,
+            .tim-icons{
+                font-size: $icon-font-size-sm;
+            }
+        }
+
+        &.btn-lg{
+            height: $icon-size-lg;
+            min-width: $icon-size-lg;
+            width: $icon-size-lg;
+
+            .fa,
+            .far,
+            .fas,
+            .tim-icons{
+                font-size: $icon-font-size-lg;
+            }
+        }
+
+        &:not(.btn-footer) .tim-icons,
+        &:not(.btn-footer) .fa,
+        &:not(.btn-footer) .far,
+        &:not(.btn-footer) .fas{
+            position: absolute;
+            font-size: 1em;
+            top: 50%;
+            left: 50%;
+            transform: translate(-12px, -12px);
+            line-height: 1.5626rem;
+            width: 24px;
+        }
+
+    }
+
+    &:not(.btn-icon) .tim-icons{
+        position: relative;
+        top: 1px;
+    }
+
+    span{
+      position: relative;
+      display: block;
+    }
+
+  &.btn-link.dropdown-toggle {
+    color: $dark-gray;
   }
 
-  &:focus,
-  &.focus {
-    // Avoid using mixin so we can pass custom focus shadow properly
-    @if $enable-shadows {
-      box-shadow: $btn-box-shadow, 0 0 0 $btn-focus-width rgba(mix(color-yiq($background), $border, 15%), .5);
-    } @else {
-      box-shadow: 0 0 0 $btn-focus-width rgba(mix(color-yiq($background), $border, 15%), .5);
-    }
-  }
-
-  // Disabled comes first so active can properly restyle
-  &.disabled,
-  &:disabled {
-    color: color-yiq($background);
-    background-color: $background;
-    border-color: $border;
-    // Remove CSS gradients if they're enabled
-    @if $enable-gradients {
-      background-image: none;
-    }
-  }
-
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active,
-  .show > &.dropdown-toggle {
-    color: color-yiq($active-background);
-    background-color: $active-background;
-    @if $enable-gradients {
-      background-image: none; // Remove the gradient for the pressed/active state
-    }
-    border-color: $active-border;
-
-    &:focus {
-      // Avoid using mixin so we can pass custom focus shadow properly
-      @if $enable-shadows and $btn-active-box-shadow != none {
-        box-shadow: $btn-active-box-shadow, 0 0 0 $btn-focus-width rgba(mix(color-yiq($background), $border, 15%), .5);
-      } @else {
-        box-shadow: 0 0 0 $btn-focus-width rgba(mix(color-yiq($background), $border, 15%), .5);
-      }
-    }
+  &.dropdown-toggle:after {
+    margin-left: 30px !important;
   }
 }
 
-@mixin button-outline-variant($color, $color-hover: color-yiq($color), $active-background: $color, $active-border: $color) {
-  color: $color;
-  border-color: $color;
+// Apply the mixin to the buttons
+// .btn-default { @include btn-styles($default-color, $default-states-color); }
+.btn-primary { @include btn-styles($primary, $primary-states);
 
-  @include hover {
-    color: $color-hover;
-    background-color: $active-background;
-    border-color: $active-border;
-  }
+              }
+.btn-success { @include btn-styles($success, $success-states);
 
-  &:focus,
-  &.focus {
-    box-shadow: 0 0 0 $btn-focus-width rgba($color, .5);
-  }
+              }
+.btn-info    { @include btn-styles($info, $info-states);
 
-  &.disabled,
-  &:disabled {
-    color: $color;
-    background-color: transparent;
-  }
+              }
+.btn-warning { @include btn-styles($warning, $warning-states);
+                &:not(:disabled):not(.disabled):active{
+                  color: $white;
+                }
+              }
+.btn-danger  { @include btn-styles($danger, $danger-states);
 
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active,
-  .show > &.dropdown-toggle {
-    color: color-yiq($active-background);
-    background-color: $active-background;
-    border-color: $active-border;
+              }
+.btn-neutral { @include btn-styles($white, $white); }
 
-    &:focus {
-      // Avoid using mixin so we can pass custom focus shadow properly
-      @if $enable-shadows and $btn-active-box-shadow != none {
-        box-shadow: $btn-active-box-shadow, 0 0 0 $btn-focus-width rgba($color, .5);
-      } @else {
-        box-shadow: 0 0 0 $btn-focus-width rgba($color, .5);
-      }
+.btn{
+     &:disabled,
+     &[disabled],
+     &.disabled{
+        @include opacity(.5);
+        pointer-events: none;
     }
+}
+.btn-simple{
+    border: $border;
+    border-color: $default;
+    box-shadow: none;
+    padding: $padding-btn-vertical - 1 $padding-round-horizontal - 1;
+    background-color: $transparent-bg;
+}
+
+.btn-simple,
+.btn-link{
+    &.disabled,
+    &:disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &,
+        &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active {
+            background: $transparent-bg;
+        }
+    }
+}
+
+.btn:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled).active{
+  box-shadow: 2px 2px 6px rgba(0,0,0,.4);
+}
+.btn-link{
+    border: $none;
+    box-shadow: none;
+    padding: $padding-base-vertical $padding-base-horizontal;
+    background: $transparent-bg;
+    color: $gray-300;
+    font-weight: $font-weight-bold;
+
+  &:hover {
+    box-shadow: none !important;
+    transform: none !important;
   }
 }
 
-// Button sizes
-@mixin button-size($padding-y, $padding-x, $font-size, $line-height, $border-radius) {
-  padding: $padding-y $padding-x;
-  @include font-size($font-size);
-  line-height: $line-height;
-  // Manually declare to provide an override to the browser default
-  @include border-radius($border-radius, 0);
+.btn-lg{
+   @include btn-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-base, $border-radius-lg);
+}
+.btn-sm{
+    @include btn-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-base, $border-radius-sm);
+}
+
+.btn-wd {
+    min-width: 140px;
+}
+.btn-group.select{
+    width: 100%;
+}
+
+.btn-group {
+  .btn.active {
+    box-shadow: 2px 2px 6px rgba(0,0,0,.4);
+    transform: translateY(-1px);
+    -webkit-transform: translateY(-1px);
+  }
+}
+
+
+.btn-group.select .btn{
+    text-align: left;
+}
+.btn-group.select .caret{
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    right: 8px;
+}
+
+.btn-group .btn.active {
+    box-shadow: 2px 2px 6px rgba(0,0,0,.4);
+    transform: translateY(-1px);
+    -webkit-transform: translateY(-1px);
+}
+
+.btn-round{
+    border-width: $border-thin;
+    border-radius: $btn-round-radius;
+
+    &.btn-simple{
+        padding: $padding-btn-vertical - 1  $padding-round-horizontal - 1;
+    }
+}
+
+.no-caret {
+  &.dropdown-toggle::after {
+    display: none;
+  }
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle {
+    color: $white;
+}
+
+.btn-group label.btn.active {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
 }

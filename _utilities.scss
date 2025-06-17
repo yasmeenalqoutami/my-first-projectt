@@ -1,11 +1,9 @@
-.u-avatar-circle {
-	width: 2.5rem;
-	height: 2.5rem;
-	border-radius: 50%;
-}
-
-.u-avatar-lg {
-	width: 6rem;
-	height: 6rem;
-	border-radius: 50%;
-}
+@import "utilities/backgrounds.scss";
+@import "utilities/floating.scss";
+@import "utilities/helper.scss";
+@import "utilities/position.scss";
+@import "utilities/sizing.scss";
+@import "utilities/spacing.scss";
+@import "utilities/shadows.scss";
+@import "utilities/text.scss";
+@import "utilities/transform.scss";
