@@ -1,0 +1,210 @@
+[Sun May 04 14:06:34.666067 2025] [ssl:warn] [pid 456:tid 600] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun May 04 14:06:34.965976 2025] [ssl:warn] [pid 456:tid 600] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun May 04 14:06:35.288942 2025] [mpm_winnt:notice] [pid 456:tid 600] AH00455: Apache/2.4.48 (Win64) OpenSSL/1.1.1l PHP/8.0.10 configured -- resuming normal operations
+[Sun May 04 14:06:35.288942 2025] [mpm_winnt:notice] [pid 456:tid 600] AH00456: Apache Lounge VS16 Server built: Aug 25 2021 12:07:35
+[Sun May 04 14:06:35.288942 2025] [core:notice] [pid 456:tid 600] AH00094: Command line: 'C:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Sun May 04 14:06:35.320200 2025] [mpm_winnt:notice] [pid 456:tid 600] AH00418: Parent: Created child process 372
+[Sun May 04 14:06:36.724294 2025] [ssl:warn] [pid 372:tid 644] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun May 04 14:06:36.871460 2025] [ssl:warn] [pid 372:tid 644] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun May 04 14:06:36.924902 2025] [mpm_winnt:notice] [pid 372:tid 644] AH00354: Child: Starting 150 worker threads.
+[Sun May 04 14:10:05.634283 2025] [ssl:warn] [pid 8164:tid 640] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun May 04 14:10:05.973091 2025] [ssl:warn] [pid 8164:tid 640] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun May 04 14:10:06.004349 2025] [mpm_winnt:notice] [pid 8164:tid 640] AH00455: Apache/2.4.48 (Win64) OpenSSL/1.1.1l PHP/8.0.10 configured -- resuming normal operations
+[Sun May 04 14:10:06.004349 2025] [mpm_winnt:notice] [pid 8164:tid 640] AH00456: Apache Lounge VS16 Server built: Aug 25 2021 12:07:35
+[Sun May 04 14:10:06.004349 2025] [core:notice] [pid 8164:tid 640] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Sun May 04 14:10:06.019980 2025] [mpm_winnt:notice] [pid 8164:tid 640] AH00418: Parent: Created child process 16128
+[Sun May 04 14:10:08.084245 2025] [ssl:warn] [pid 16128:tid 624] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun May 04 14:10:08.268868 2025] [ssl:warn] [pid 16128:tid 624] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun May 04 14:10:08.315767 2025] [mpm_winnt:notice] [pid 16128:tid 624] AH00354: Child: Starting 150 worker threads.
+[Sun May 04 15:03:57.001507 2025] [php:warn] [pid 16128:tid 1868] [client ::1:61787] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 7, referer: http://localhost/smoker/pages/sConsultant.php?cId=2&cName=doctor%20y&cPrice=12
+[Sun May 04 15:03:57.004488 2025] [php:warn] [pid 16128:tid 1868] [client ::1:61787] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 12, referer: http://localhost/smoker/pages/sConsultant.php?cId=2&cName=doctor%20y&cPrice=12
+[Sun May 04 15:03:57.011733 2025] [php:warn] [pid 16128:tid 1868] [client ::1:61787] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 68, referer: http://localhost/smoker/pages/sConsultant.php?cId=2&cName=doctor%20y&cPrice=12
+[Sun May 04 15:07:55.797406 2025] [php:warn] [pid 16128:tid 1884] [client ::1:61880] PHP Warning:  Undefined array key "cId" in C:\\xampp\\htdocs\\Smoker\\pages\\sConsultant.php on line 60
+[Sun May 04 15:07:55.797406 2025] [php:warn] [pid 16128:tid 1884] [client ::1:61880] PHP Warning:  Undefined array key "cName" in C:\\xampp\\htdocs\\Smoker\\pages\\sConsultant.php on line 61
+[Sun May 04 15:07:55.798405 2025] [php:warn] [pid 16128:tid 1884] [client ::1:61880] PHP Warning:  Undefined array key "cName" in C:\\xampp\\htdocs\\Smoker\\pages\\sConsultant.php on line 83
+[Sun May 04 15:08:06.469875 2025] [php:error] [pid 16128:tid 1884] [client ::1:61884] script 'C:/xampp/htdocs/Smoker/Consultant.php' not found or unable to stat
+[Wed May 07 13:28:00.883365 2025] [php:warn] [pid 16128:tid 1884] [client ::1:63110] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 7, referer: http://localhost/smoker/pages/chatwithuser.php
+[Wed May 07 13:28:00.892592 2025] [php:warn] [pid 16128:tid 1884] [client ::1:63110] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 12, referer: http://localhost/smoker/pages/chatwithuser.php
+[Wed May 07 13:28:00.916303 2025] [php:warn] [pid 16128:tid 1884] [client ::1:63110] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 68, referer: http://localhost/smoker/pages/chatwithuser.php
+[Wed May 07 13:28:00.925574 2025] [php:warn] [pid 16128:tid 1884] [client ::1:63110] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\user.php on line 60, referer: http://localhost/smoker/pages/chatwithuser.php
+[Wed May 07 13:28:00.925574 2025] [php:warn] [pid 16128:tid 1884] [client ::1:63110] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\user.php on line 62, referer: http://localhost/smoker/pages/chatwithuser.php
+[Mon May 19 17:04:30.419053 2025] [ssl:warn] [pid 13736:tid 640] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon May 19 17:04:30.693967 2025] [core:warn] [pid 13736:tid 640] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon May 19 17:04:30.693967 2025] [ssl:warn] [pid 13736:tid 640] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon May 19 17:04:32.190806 2025] [mpm_winnt:notice] [pid 13736:tid 640] AH00455: Apache/2.4.48 (Win64) OpenSSL/1.1.1l PHP/8.0.10 configured -- resuming normal operations
+[Mon May 19 17:04:32.190806 2025] [mpm_winnt:notice] [pid 13736:tid 640] AH00456: Apache Lounge VS16 Server built: Aug 25 2021 12:07:35
+[Mon May 19 17:04:32.190806 2025] [core:notice] [pid 13736:tid 640] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Mon May 19 17:04:32.196803 2025] [mpm_winnt:notice] [pid 13736:tid 640] AH00418: Parent: Created child process 15924
+[Mon May 19 17:04:36.188362 2025] [ssl:warn] [pid 15924:tid 664] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon May 19 17:04:36.302093 2025] [ssl:warn] [pid 15924:tid 664] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon May 19 17:04:36.344365 2025] [mpm_winnt:notice] [pid 15924:tid 664] AH00354: Child: Starting 150 worker threads.
+[Tue May 20 00:31:47.150323 2025] [ssl:warn] [pid 12412:tid 700] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue May 20 00:31:47.640251 2025] [core:warn] [pid 12412:tid 700] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue May 20 00:31:47.640251 2025] [ssl:warn] [pid 12412:tid 700] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue May 20 00:31:51.300218 2025] [mpm_winnt:notice] [pid 12412:tid 700] AH00455: Apache/2.4.48 (Win64) OpenSSL/1.1.1l PHP/8.0.10 configured -- resuming normal operations
+[Tue May 20 00:31:51.300218 2025] [mpm_winnt:notice] [pid 12412:tid 700] AH00456: Apache Lounge VS16 Server built: Aug 25 2021 12:07:35
+[Tue May 20 00:31:51.300218 2025] [core:notice] [pid 12412:tid 700] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Tue May 20 00:31:51.520428 2025] [mpm_winnt:notice] [pid 12412:tid 700] AH00418: Parent: Created child process 8496
+[Tue May 20 00:31:56.470294 2025] [ssl:warn] [pid 8496:tid 660] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue May 20 00:31:56.710202 2025] [ssl:warn] [pid 8496:tid 660] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue May 20 00:31:56.800353 2025] [mpm_winnt:notice] [pid 8496:tid 660] AH00354: Child: Starting 150 worker threads.
+[Wed May 21 18:06:50.013528 2025] [ssl:warn] [pid 7024:tid 536] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed May 21 18:06:50.495796 2025] [core:warn] [pid 7024:tid 536] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed May 21 18:06:50.517787 2025] [ssl:warn] [pid 7024:tid 536] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed May 21 18:06:55.846636 2025] [mpm_winnt:notice] [pid 7024:tid 536] AH00455: Apache/2.4.48 (Win64) OpenSSL/1.1.1l PHP/8.0.10 configured -- resuming normal operations
+[Wed May 21 18:06:55.847637 2025] [mpm_winnt:notice] [pid 7024:tid 536] AH00456: Apache Lounge VS16 Server built: Aug 25 2021 12:07:35
+[Wed May 21 18:06:55.847637 2025] [core:notice] [pid 7024:tid 536] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Wed May 21 18:06:55.860628 2025] [mpm_winnt:notice] [pid 7024:tid 536] AH00418: Parent: Created child process 10244
+[Wed May 21 18:07:00.038445 2025] [ssl:warn] [pid 10244:tid 640] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed May 21 18:07:00.487955 2025] [ssl:warn] [pid 10244:tid 640] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed May 21 18:07:00.585567 2025] [mpm_winnt:notice] [pid 10244:tid 640] AH00354: Child: Starting 150 worker threads.
+[Wed May 21 18:09:07.712520 2025] [php:warn] [pid 10244:tid 1836] [client ::1:55032] PHP Warning:  Undefined array key "Url" in C:\\xampp\\htdocs\\Smoker\\pages\\vProducts.php on line 84, referer: http://localhost/smoker/pages/cConsultant.php
+[Wed May 21 18:09:48.448118 2025] [core:error] [pid 10244:tid 1852] (20024)The given path is misformatted or contained invalid characters: [client ::1:55068] AH00127: Cannot map GET /smoker/pages/%3Cbr%20/%3E%3Cb%3EWarning%3C/b%3E:%20%20Undefined%20array%20key HTTP/1.1 to file, referer: http://localhost/smoker/pages/vProducts.php
+[Thu May 22 15:19:47.888391 2025] [php:warn] [pid 10244:tid 1852] [client ::1:52518] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 7, referer: http://localhost/smoker/Login.php
+[Thu May 22 15:19:47.912349 2025] [php:warn] [pid 10244:tid 1852] [client ::1:52518] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 13, referer: http://localhost/smoker/Login.php
+[Thu May 22 15:19:47.913349 2025] [php:warn] [pid 10244:tid 1852] [client ::1:52518] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 16, referer: http://localhost/smoker/Login.php
+[Thu May 22 15:19:47.918346 2025] [php:warn] [pid 10244:tid 1852] [client ::1:52518] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 80, referer: http://localhost/smoker/Login.php
+[Thu May 22 15:19:47.922344 2025] [php:warn] [pid 10244:tid 1852] [client ::1:52518] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\user.php on line 85, referer: http://localhost/smoker/Login.php
+[Thu May 22 15:19:47.923360 2025] [php:warn] [pid 10244:tid 1852] [client ::1:52518] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\user.php on line 87, referer: http://localhost/smoker/Login.php
+[Thu May 22 15:19:50.248953 2025] [php:warn] [pid 10244:tid 1852] [client ::1:52518] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 7, referer: http://localhost/smoker/Login.php
+[Thu May 22 15:19:50.252968 2025] [php:warn] [pid 10244:tid 1852] [client ::1:52518] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 13, referer: http://localhost/smoker/Login.php
+[Thu May 22 15:19:50.253967 2025] [php:warn] [pid 10244:tid 1852] [client ::1:52518] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 16, referer: http://localhost/smoker/Login.php
+[Thu May 22 15:19:50.260958 2025] [php:warn] [pid 10244:tid 1852] [client ::1:52518] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 80, referer: http://localhost/smoker/Login.php
+[Thu May 22 15:19:50.265940 2025] [php:warn] [pid 10244:tid 1852] [client ::1:52518] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\user.php on line 85, referer: http://localhost/smoker/Login.php
+[Thu May 22 15:19:50.266938 2025] [php:warn] [pid 10244:tid 1852] [client ::1:52518] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\user.php on line 87, referer: http://localhost/smoker/Login.php
+[Thu May 22 15:24:32.189225 2025] [php:warn] [pid 10244:tid 1828] [client ::1:52582] PHP Warning:  Undefined array key "Url" in C:\\xampp\\htdocs\\Smoker\\pages\\vProducts.php on line 84, referer: http://localhost/smoker/pages/cConsultant.php
+[Thu May 22 15:38:48.422379 2025] [php:warn] [pid 10244:tid 1828] [client ::1:52759] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 7, referer: http://localhost/smoker/pages/nStatus.php
+[Thu May 22 15:38:48.430375 2025] [php:warn] [pid 10244:tid 1828] [client ::1:52759] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 13, referer: http://localhost/smoker/pages/nStatus.php
+[Thu May 22 15:38:48.431396 2025] [php:warn] [pid 10244:tid 1828] [client ::1:52759] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 16, referer: http://localhost/smoker/pages/nStatus.php
+[Thu May 22 15:38:48.459023 2025] [php:warn] [pid 10244:tid 1828] [client ::1:52759] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 80, referer: http://localhost/smoker/pages/nStatus.php
+[Thu May 22 15:38:48.465023 2025] [php:warn] [pid 10244:tid 1828] [client ::1:52759] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\wallet.php on line 84, referer: http://localhost/smoker/pages/nStatus.php
+[Thu May 22 15:38:49.189733 2025] [php:warn] [pid 10244:tid 1828] [client ::1:52759] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 7, referer: http://localhost/smoker/pages/wallet.php
+[Thu May 22 15:38:49.195728 2025] [php:warn] [pid 10244:tid 1828] [client ::1:52759] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 13, referer: http://localhost/smoker/pages/wallet.php
+[Thu May 22 15:38:49.196747 2025] [php:warn] [pid 10244:tid 1828] [client ::1:52759] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 16, referer: http://localhost/smoker/pages/wallet.php
+[Thu May 22 15:38:49.202745 2025] [php:warn] [pid 10244:tid 1828] [client ::1:52759] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 80, referer: http://localhost/smoker/pages/wallet.php
+[Thu May 22 15:38:49.796396 2025] [php:warn] [pid 10244:tid 1828] [client ::1:52759] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 7, referer: http://localhost/smoker/pages/vProducts.php
+[Thu May 22 15:38:49.800373 2025] [php:warn] [pid 10244:tid 1828] [client ::1:52759] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 13, referer: http://localhost/smoker/pages/vProducts.php
+[Thu May 22 15:38:49.801375 2025] [php:warn] [pid 10244:tid 1828] [client ::1:52759] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 16, referer: http://localhost/smoker/pages/vProducts.php
+[Thu May 22 15:38:49.807371 2025] [php:warn] [pid 10244:tid 1828] [client ::1:52759] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 80, referer: http://localhost/smoker/pages/vProducts.php
+[Thu May 22 15:38:49.814363 2025] [php:warn] [pid 10244:tid 1828] [client ::1:52759] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\wallet.php on line 84, referer: http://localhost/smoker/pages/vProducts.php
+[Thu May 22 15:38:50.301068 2025] [php:warn] [pid 10244:tid 1828] [client ::1:52759] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 7, referer: http://localhost/smoker/pages/cConsultant.php
+[Thu May 22 15:38:50.306065 2025] [php:warn] [pid 10244:tid 1828] [client ::1:52759] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 13, referer: http://localhost/smoker/pages/cConsultant.php
+[Thu May 22 15:38:50.307069 2025] [php:warn] [pid 10244:tid 1828] [client ::1:52759] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 16, referer: http://localhost/smoker/pages/cConsultant.php
+[Thu May 22 15:38:50.315062 2025] [php:warn] [pid 10244:tid 1828] [client ::1:52759] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 80, referer: http://localhost/smoker/pages/cConsultant.php
+[Thu May 22 15:38:50.320074 2025] [php:warn] [pid 10244:tid 1828] [client ::1:52759] PHP Warning:  Undefined array key "Url" in C:\\xampp\\htdocs\\Smoker\\pages\\vProducts.php on line 84, referer: http://localhost/smoker/pages/cConsultant.php
+[Thu May 22 16:01:58.236024 2025] [php:warn] [pid 10244:tid 1816] [client ::1:60528] PHP Warning:  Undefined array key "Url" in C:\\xampp\\htdocs\\Smoker\\pages\\vProducts.php on line 84, referer: http://localhost/smoker/pages/cConsultant.php
+[Thu May 22 16:02:10.298166 2025] [php:warn] [pid 10244:tid 1836] [client ::1:60540] PHP Warning:  Undefined array key "uStatus" in C:\\xampp\\htdocs\\Smoker\\pages\\sub-message.php on line 112, referer: http://localhost/smoker/pages/chatwithuser.php
+[Thu May 22 16:03:31.324305 2025] [php:warn] [pid 10244:tid 1816] [client ::1:60598] PHP Warning:  Undefined array key "Url" in C:\\xampp\\htdocs\\Smoker\\pages\\vProducts.php on line 84, referer: http://localhost/smoker/pages/cConsultant.php
+[Thu May 22 16:03:36.854138 2025] [php:warn] [pid 10244:tid 1816] [client ::1:60598] PHP Warning:  Undefined array key "Url" in C:\\xampp\\htdocs\\Smoker\\pages\\vProducts.php on line 84, referer: http://localhost/smoker/pages/cConsultant.php
+[Thu May 22 16:03:46.360695 2025] [php:warn] [pid 10244:tid 1836] [client ::1:60634] PHP Warning:  Undefined array key "Url" in C:\\xampp\\htdocs\\Smoker\\pages\\vProducts.php on line 84, referer: http://localhost/smoker/pages/cConsultant.php
+[Thu May 22 16:14:24.351846 2025] [php:warn] [pid 10244:tid 1816] [client ::1:60867] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 7, referer: http://localhost/smoker/pages/sUser.php?uId=3&uName=fff
+[Thu May 22 16:14:24.359846 2025] [php:warn] [pid 10244:tid 1816] [client ::1:60867] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 13, referer: http://localhost/smoker/pages/sUser.php?uId=3&uName=fff
+[Thu May 22 16:14:24.367845 2025] [php:warn] [pid 10244:tid 1816] [client ::1:60867] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 16, referer: http://localhost/smoker/pages/sUser.php?uId=3&uName=fff
+[Thu May 22 16:14:24.367845 2025] [php:warn] [pid 10244:tid 1816] [client ::1:60867] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 80, referer: http://localhost/smoker/pages/sUser.php?uId=3&uName=fff
+[Thu May 22 16:17:27.054136 2025] [php:warn] [pid 10244:tid 1816] [client ::1:60916] PHP Warning:  Undefined array key "Url" in C:\\xampp\\htdocs\\Smoker\\pages\\vProducts.php on line 84, referer: http://localhost/smoker/pages/wallet.php
+[Thu May 22 16:17:32.564020 2025] [core:error] [pid 10244:tid 1836] (20024)The given path is misformatted or contained invalid characters: [client ::1:60917] AH00127: Cannot map GET /smoker/pages/%3Cbr%20/%3E%3Cb%3EWarning%3C/b%3E:%20%20Undefined%20array%20key HTTP/1.1 to file, referer: http://localhost/smoker/pages/vProducts.php
+[Thu May 22 16:18:29.753870 2025] [php:warn] [pid 10244:tid 1816] [client ::1:60925] PHP Warning:  Undefined array key "Url" in C:\\xampp\\htdocs\\Smoker\\pages\\vProducts.php on line 84, referer: http://localhost/smoker/pages/vProducts.php
+[Thu May 22 16:18:33.638378 2025] [core:error] [pid 10244:tid 1816] (20024)The given path is misformatted or contained invalid characters: [client ::1:60925] AH00127: Cannot map GET /smoker/pages/%3Cbr%20/%3E%3Cb%3EWarning%3C/b%3E:%20%20Undefined%20array%20key HTTP/1.1 to file, referer: http://localhost/smoker/pages/vProducts.php
+[Thu May 22 16:20:57.539824 2025] [php:warn] [pid 10244:tid 1836] [client ::1:60942] PHP Warning:  Undefined array key "Url" in C:\\xampp\\htdocs\\Smoker\\pages\\vProducts.php on line 84, referer: http://localhost/smoker/pages/vProducts.php
+[Thu May 22 16:24:55.899064 2025] [php:warn] [pid 10244:tid 1836] [client ::1:61103] PHP Warning:  Undefined array key "uStatus" in C:\\xampp\\htdocs\\Smoker\\pages\\sub-message.php on line 112, referer: http://localhost/smoker/pages/chatwithuser.php
+[Thu May 22 16:27:14.309424 2025] [php:warn] [pid 10244:tid 1836] [client ::1:61132] PHP Warning:  Undefined array key "uStatus" in C:\\xampp\\htdocs\\Smoker\\pages\\sub-message.php on line 112, referer: http://localhost/smoker/pages/chatwithuser.php
+[Thu May 22 16:31:15.702128 2025] [php:warn] [pid 10244:tid 1836] [client ::1:59801] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 7, referer: http://localhost/smoker/pages/tracking.php
+[Thu May 22 16:31:15.710036 2025] [php:warn] [pid 10244:tid 1836] [client ::1:59801] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 13, referer: http://localhost/smoker/pages/tracking.php
+[Thu May 22 16:31:15.710036 2025] [php:warn] [pid 10244:tid 1836] [client ::1:59801] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 16, referer: http://localhost/smoker/pages/tracking.php
+[Thu May 22 16:31:15.717070 2025] [php:warn] [pid 10244:tid 1836] [client ::1:59801] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 80, referer: http://localhost/smoker/pages/tracking.php
+[Thu May 22 16:33:58.243181 2025] [php:warn] [pid 10244:tid 1816] [client ::1:59886] PHP Warning:  Undefined array key "consultant" in C:\\xampp\\htdocs\\Smoker\\pages\\headercon.php on line 7, referer: http://localhost/smoker/pages/sub-message.php?uId=4&uName=LL
+[Thu May 22 16:34:07.018564 2025] [php:warn] [pid 10244:tid 1816] [client ::1:59886] PHP Warning:  Undefined array key "Url" in C:\\xampp\\htdocs\\Smoker\\pages\\vProducts.php on line 84, referer: http://localhost/smoker/pages/sConsultant.php?cId=2&cName=doctor%20y&cPrice=12
+[Sun May 25 14:38:58.256405 2025] [ssl:warn] [pid 8904:tid 552] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun May 25 14:39:00.374129 2025] [core:warn] [pid 8904:tid 552] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun May 25 14:39:03.867123 2025] [ssl:warn] [pid 8904:tid 552] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun May 25 14:39:33.635815 2025] [mpm_winnt:notice] [pid 8904:tid 552] AH00455: Apache/2.4.48 (Win64) OpenSSL/1.1.1l PHP/8.0.10 configured -- resuming normal operations
+[Sun May 25 14:39:33.635815 2025] [mpm_winnt:notice] [pid 8904:tid 552] AH00456: Apache Lounge VS16 Server built: Aug 25 2021 12:07:35
+[Sun May 25 14:39:33.635815 2025] [core:notice] [pid 8904:tid 552] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Sun May 25 14:39:33.651330 2025] [mpm_winnt:notice] [pid 8904:tid 552] AH00418: Parent: Created child process 15696
+[Sun May 25 14:39:39.614243 2025] [ssl:warn] [pid 15696:tid 768] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun May 25 14:39:39.964191 2025] [ssl:warn] [pid 15696:tid 768] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun May 25 14:39:40.029160 2025] [mpm_winnt:notice] [pid 15696:tid 768] AH00354: Child: Starting 150 worker threads.
+[Sun May 25 15:24:16.780152 2025] [php:warn] [pid 15696:tid 1828] [client ::1:60956] PHP Warning:  Undefined array key "Url" in C:\\xampp\\htdocs\\Smoker\\pages\\vProducts.php on line 84, referer: http://localhost/smoker/pages/tracking.php
+[Sun May 25 15:25:13.158366 2025] [php:warn] [pid 15696:tid 1828] [client ::1:60976] PHP Warning:  Undefined array key "Url" in C:\\xampp\\htdocs\\Smoker\\pages\\vProducts.php on line 84, referer: http://localhost/smoker/pages/tracking.php
+[Sun May 25 15:25:18.570165 2025] [core:error] [pid 15696:tid 1824] (20024)The given path is misformatted or contained invalid characters: [client ::1:60975] AH00127: Cannot map GET /smoker/pages/%3Cbr%20/%3E%3Cb%3EWarning%3C/b%3E:%20%20Undefined%20array%20key HTTP/1.1 to file, referer: http://localhost/smoker/pages/vProducts.php
+[Sun May 25 15:26:31.703111 2025] [php:warn] [pid 15696:tid 1836] [client ::1:61006] PHP Warning:  Undefined array key "Url" in C:\\xampp\\htdocs\\Smoker\\pages\\vProducts.php on line 84, referer: http://localhost/smoker/pages/tracking.php
+[Sun May 25 15:26:38.862263 2025] [php:warn] [pid 15696:tid 1844] [client ::1:61007] PHP Warning:  Undefined array key "Url" in C:\\xampp\\htdocs\\Smoker\\pages\\vProducts.php on line 84, referer: http://localhost/smoker/pages/vProducts.php
+[Sun May 25 17:15:38.443698 2025] [php:warn] [pid 15696:tid 1828] [client ::1:61575] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 7, referer: http://localhost/smoker/pages/vProducts.php
+[Sun May 25 17:15:38.443698 2025] [php:warn] [pid 15696:tid 1828] [client ::1:61575] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 13, referer: http://localhost/smoker/pages/vProducts.php
+[Sun May 25 17:15:38.443698 2025] [php:warn] [pid 15696:tid 1828] [client ::1:61575] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 16, referer: http://localhost/smoker/pages/vProducts.php
+[Sun May 25 17:15:38.454027 2025] [php:warn] [pid 15696:tid 1828] [client ::1:61575] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 80, referer: http://localhost/smoker/pages/vProducts.php
+[Sun May 25 17:48:25.504345 2025] [php:warn] [pid 15696:tid 1828] [client ::1:61739] PHP Warning:  Undefined array key "admin" in C:\\xampp\\htdocs\\Smoker\\pages\\userheader.php on line 7
+[Sun May 25 17:48:57.121394 2025] [php:error] [pid 15696:tid 1836] [client ::1:61741] script 'C:/xampp/htdocs/Smoker/login-admin..php' not found or unable to stat
+[Sun May 25 21:32:41.225967 2025] [php:warn] [pid 15696:tid 1860] [client ::1:59207] PHP Warning:  Undefined array key "admin" in C:\\xampp\\htdocs\\Smoker\\pages\\userheader.php on line 7, referer: http://localhost/smoker/pages/nProducts.php
+[Mon May 26 00:19:24.653058 2025] [php:warn] [pid 15696:tid 1836] [client ::1:49199] PHP Warning:  Undefined array key "admin" in C:\\xampp\\htdocs\\Smoker\\pages\\userheader.php on line 7
+[Mon May 26 01:45:20.882548 2025] [php:warn] [pid 15696:tid 1828] [client ::1:49860] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 7, referer: http://localhost/smoker/pages/vProducts.php
+[Mon May 26 01:45:20.897718 2025] [php:warn] [pid 15696:tid 1828] [client ::1:49860] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 13, referer: http://localhost/smoker/pages/vProducts.php
+[Mon May 26 01:45:20.897718 2025] [php:warn] [pid 15696:tid 1828] [client ::1:49860] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 16, referer: http://localhost/smoker/pages/vProducts.php
+[Mon May 26 01:45:20.902744 2025] [php:warn] [pid 15696:tid 1828] [client ::1:49860] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 80, referer: http://localhost/smoker/pages/vProducts.php
+[Mon May 26 01:45:21.432569 2025] [php:warn] [pid 15696:tid 1828] [client ::1:49860] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 7, referer: http://localhost/smoker/login.php
+[Mon May 26 01:45:21.442884 2025] [php:warn] [pid 15696:tid 1828] [client ::1:49860] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 13, referer: http://localhost/smoker/login.php
+[Mon May 26 01:45:21.447895 2025] [php:warn] [pid 15696:tid 1828] [client ::1:49860] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 16, referer: http://localhost/smoker/login.php
+[Mon May 26 01:45:21.452421 2025] [php:warn] [pid 15696:tid 1828] [client ::1:49860] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\header.php on line 80, referer: http://localhost/smoker/login.php
+[Mon May 26 01:45:21.460337 2025] [php:warn] [pid 15696:tid 1828] [client ::1:49860] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\user.php on line 85, referer: http://localhost/smoker/login.php
+[Mon May 26 01:45:21.462861 2025] [php:warn] [pid 15696:tid 1828] [client ::1:49860] PHP Warning:  Undefined array key "user" in C:\\xampp\\htdocs\\Smoker\\pages\\user.php on line 87, referer: http://localhost/smoker/login.php
+[Tue May 27 22:19:30.095994 2025] [ssl:warn] [pid 11884:tid 716] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue May 27 22:19:32.262332 2025] [core:warn] [pid 11884:tid 716] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue May 27 22:19:32.554168 2025] [ssl:warn] [pid 11884:tid 716] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue May 27 22:19:45.939993 2025] [mpm_winnt:notice] [pid 11884:tid 716] AH00455: Apache/2.4.48 (Win64) OpenSSL/1.1.1l PHP/8.0.10 configured -- resuming normal operations
+[Tue May 27 22:19:45.939993 2025] [mpm_winnt:notice] [pid 11884:tid 716] AH00456: Apache Lounge VS16 Server built: Aug 25 2021 12:07:35
+[Tue May 27 22:19:45.939993 2025] [core:notice] [pid 11884:tid 716] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Tue May 27 22:19:45.949988 2025] [mpm_winnt:notice] [pid 11884:tid 716] AH00418: Parent: Created child process 22064
+[Tue May 27 22:19:51.061646 2025] [ssl:warn] [pid 22064:tid 600] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue May 27 22:19:51.283519 2025] [ssl:warn] [pid 22064:tid 600] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue May 27 22:19:51.372468 2025] [mpm_winnt:notice] [pid 22064:tid 600] AH00354: Child: Starting 150 worker threads.
+[Tue May 27 22:20:56.810999 2025] [ssl:warn] [pid 21444:tid 512] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue May 27 22:20:57.401644 2025] [core:warn] [pid 21444:tid 512] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue May 27 22:20:57.468605 2025] [ssl:warn] [pid 21444:tid 512] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue May 27 22:20:57.570547 2025] [mpm_winnt:notice] [pid 21444:tid 512] AH00455: Apache/2.4.48 (Win64) OpenSSL/1.1.1l PHP/8.0.10 configured -- resuming normal operations
+[Tue May 27 22:20:57.570547 2025] [mpm_winnt:notice] [pid 21444:tid 512] AH00456: Apache Lounge VS16 Server built: Aug 25 2021 12:07:35
+[Tue May 27 22:20:57.570547 2025] [core:notice] [pid 21444:tid 512] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Tue May 27 22:20:57.579543 2025] [mpm_winnt:notice] [pid 21444:tid 512] AH00418: Parent: Created child process 5760
+[Tue May 27 22:21:02.544672 2025] [ssl:warn] [pid 5760:tid 696] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue May 27 22:21:02.763064 2025] [ssl:warn] [pid 5760:tid 696] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue May 27 22:21:02.841040 2025] [mpm_winnt:notice] [pid 5760:tid 696] AH00354: Child: Starting 150 worker threads.
+[Wed May 28 21:17:12.592783 2025] [ssl:warn] [pid 7016:tid 564] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed May 28 21:17:13.724282 2025] [core:warn] [pid 7016:tid 564] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed May 28 21:17:13.734342 2025] [ssl:warn] [pid 7016:tid 564] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed May 28 21:17:22.073897 2025] [mpm_winnt:notice] [pid 7016:tid 564] AH00455: Apache/2.4.48 (Win64) OpenSSL/1.1.1l PHP/8.0.10 configured -- resuming normal operations
+[Wed May 28 21:17:22.073897 2025] [mpm_winnt:notice] [pid 7016:tid 564] AH00456: Apache Lounge VS16 Server built: Aug 25 2021 12:07:35
+[Wed May 28 21:17:22.073897 2025] [core:notice] [pid 7016:tid 564] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Wed May 28 21:17:22.086179 2025] [mpm_winnt:notice] [pid 7016:tid 564] AH00418: Parent: Created child process 21912
+[Wed May 28 21:17:32.710060 2025] [ssl:warn] [pid 21912:tid 796] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed May 28 21:17:33.184857 2025] [ssl:warn] [pid 21912:tid 796] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed May 28 21:17:42.709642 2025] [mpm_winnt:notice] [pid 21912:tid 796] AH00354: Child: Starting 150 worker threads.
+[Mon Jun 02 00:04:47.172298 2025] [ssl:warn] [pid 14644:tid 668] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Jun 02 00:04:47.370918 2025] [core:warn] [pid 14644:tid 668] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jun 02 00:04:47.377088 2025] [ssl:warn] [pid 14644:tid 668] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Jun 02 00:04:48.654375 2025] [mpm_winnt:notice] [pid 14644:tid 668] AH00455: Apache/2.4.48 (Win64) OpenSSL/1.1.1l PHP/8.0.10 configured -- resuming normal operations
+[Mon Jun 02 00:04:48.654375 2025] [mpm_winnt:notice] [pid 14644:tid 668] AH00456: Apache Lounge VS16 Server built: Aug 25 2021 12:07:35
+[Mon Jun 02 00:04:48.654375 2025] [core:notice] [pid 14644:tid 668] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Mon Jun 02 00:04:48.665647 2025] [mpm_winnt:notice] [pid 14644:tid 668] AH00418: Parent: Created child process 6408
+[Mon Jun 02 00:04:54.166693 2025] [ssl:warn] [pid 6408:tid 568] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Jun 02 00:04:54.447119 2025] [ssl:warn] [pid 6408:tid 568] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Jun 02 00:04:54.548364 2025] [mpm_winnt:notice] [pid 6408:tid 568] AH00354: Child: Starting 150 worker threads.
+[Tue Jun 10 23:02:32.631873 2025] [ssl:warn] [pid 18356:tid 636] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Jun 10 23:02:33.522270 2025] [core:warn] [pid 18356:tid 636] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Jun 10 23:02:33.539264 2025] [ssl:warn] [pid 18356:tid 636] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Jun 10 23:03:03.152111 2025] [mpm_winnt:notice] [pid 18356:tid 636] AH00455: Apache/2.4.48 (Win64) OpenSSL/1.1.1l PHP/8.0.10 configured -- resuming normal operations
+[Tue Jun 10 23:03:03.152111 2025] [mpm_winnt:notice] [pid 18356:tid 636] AH00456: Apache Lounge VS16 Server built: Aug 25 2021 12:07:35
+[Tue Jun 10 23:03:03.152111 2025] [core:notice] [pid 18356:tid 636] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Tue Jun 10 23:03:03.162105 2025] [mpm_winnt:notice] [pid 18356:tid 636] AH00418: Parent: Created child process 16564
+[Tue Jun 10 23:03:09.592008 2025] [ssl:warn] [pid 16564:tid 644] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Jun 10 23:03:10.061479 2025] [ssl:warn] [pid 16564:tid 644] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Jun 10 23:03:10.138435 2025] [mpm_winnt:notice] [pid 16564:tid 644] AH00354: Child: Starting 150 worker threads.
+[Fri Jun 13 20:10:26.786276 2025] [ssl:warn] [pid 21560:tid 740] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Jun 13 20:10:27.160941 2025] [core:warn] [pid 21560:tid 740] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Jun 13 20:10:27.169518 2025] [ssl:warn] [pid 21560:tid 740] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Jun 13 20:10:30.490416 2025] [mpm_winnt:notice] [pid 21560:tid 740] AH00455: Apache/2.4.48 (Win64) OpenSSL/1.1.1l PHP/8.0.10 configured -- resuming normal operations
+[Fri Jun 13 20:10:30.490416 2025] [mpm_winnt:notice] [pid 21560:tid 740] AH00456: Apache Lounge VS16 Server built: Aug 25 2021 12:07:35
+[Fri Jun 13 20:10:30.490416 2025] [core:notice] [pid 21560:tid 740] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Fri Jun 13 20:10:30.720568 2025] [mpm_winnt:notice] [pid 21560:tid 740] AH00418: Parent: Created child process 13920
+[Fri Jun 13 20:10:34.455499 2025] [ssl:warn] [pid 13920:tid 620] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Jun 13 20:10:34.735736 2025] [ssl:warn] [pid 13920:tid 620] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Jun 13 20:10:34.790410 2025] [mpm_winnt:notice] [pid 13920:tid 620] AH00354: Child: Starting 150 worker threads.
+[Fri Jun 13 20:52:54.257697 2025] [php:warn] [pid 13920:tid 1828] [client ::1:49440] PHP Warning:  Undefined array key "consultant" in C:\\xampp\\htdocs\\Smoker\\pages\\headercon.php on line 7, referer: http://localhost/smoker/pages/chatwithuser.php
