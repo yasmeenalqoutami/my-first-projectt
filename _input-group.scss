@@ -1,343 +1,193 @@
-.form-group.has-danger .error,
-.input-group.has-danger .error {
-  color: $danger-states;
-}
+// stylelint-disable selector-no-qualifying-type
 
+//
+// Base styles
+//
 
-.form-group.has-success .error,
-.input-group.has-success .error {
-  color: $success;
-}
-
-@include form-control-lg-padding($padding-lg-vertical, $padding-input-horizontal);
-@include input-base-padding($padding-input-vertical, $padding-input-horizontal);
-
-.form-group.no-border,
-.input-group.no-border{
-    .form-control,
-    .form-control + .input-group-prepend .input-group-text,
-    .form-control + .input-group-append .input-group-text{
-
-        background-color: lighten($black,1%);
-        border: medium none;
-        &:focus,
-        &:active,
-        &:active{
-            border: medium none;
-            background-color: lighten($black,2%);
-        }
-    }
-
-    .form-control{
-        &:focus{
-            & + .input-group-prepend .input-group-text,
-            & + .input-group-append .input-group-text{
-                background-color: lighten($black,2%);
-            }
-        }
-    }
-
-    .input-group-prepend .input-group-text,
-    .input-group-append .input-group-text{
-        background-color: lighten($black,1%);;
-        border: none;
-    }
-}
-
-.has-error{
-    .form-control-feedback, .control-label{
-        color: $danger-states;
-    }
-}
-.has-success{
-    .form-control-feedback, .control-label{
-        color: $success;
-    }
-}
-
-.input-group-append .input-group-text,
-.input-group-prepend .input-group-text {
-    background-color: transparent;
-    border: 1px solid lighten($black,5%);
-    border-radius: $border-radius-lg;
-    color: $white;
-
-    & i{
-      opacity: .5;
-    }
-
-    @include transition-input-focus-color();
-
-    .has-danger.input-group-focus &{
-        background-color: $transparent-bg;
-    }
-
-    .has-success &{
-        background-color: $transparent-bg;
-    }
-    .has-danger .form-control:focus + &{
-        color: $danger-states;
-    }
-    .has-success .form-control:focus + &{
-        color: $success;
-    }
-
-    & + .form-control,
-    & ~ .form-control{
-        @include input-size($padding-base-vertical - 1, $padding-base-horizontal);
-        padding-left: 18px;
-    }
-
-    i{
-        width: 17px;
-    }
-}
-
-.input-group-append,
-.input-group-prepend .input-group-text,
-.input-group-prepend .input-group-text {
-    background-color: transparent;
-    border: 1px solid lighten($black,5%);
-    border-radius: $border-radius-lg;
-    color: $white;
-    margin: 0;
-}
-
-.input-group-append .input-group-text{
-  border-left: none;
-}
-.input-group-prepend .input-group-text{
-  border-right: none;
-}
-
-.input-group-focus{
-    .input-group-prepend .input-group-text,
-    .input-group-append .input-group-text{
-        background-color: $white;
-        border-color: $primary;
-        background-color: $transparent-bg;
-        border-color: $primary;
-    }
-
-    &.no-border{
-        .input-group-prepend .input-group-text,
-        .input-group-append .input-group-text{
-            background-color: lighten($black,2%);
-        }
-    }
-}
-
-.input-group,
-.form-group{
-    margin-bottom: 10px;
-    position: relative;
-
-    .form-control-static{
-        margin-top: 9px;
-    }
-}
-
-.input-group[disabled]{
-    .input-group-prepend .input-group-text,
-    .input-group-append .input-group-text{
-        background-color: $light-gray;
-    }
-}
-
-.input-group .form-control:not(:first-child):not(:last-child), .input-group-btn:not(:first-child):not(:last-child){
-    border-radius: $border-radius-lg;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-left: 0 none;
-}
-
-.input-group .form-control:first-child,
-.input-group-btn:first-child > .dropdown-toggle,
-.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
-    border-right: 0 none;
-}
-.input-group .form-control:last-child,
-.input-group-btn:last-child > .dropdown-toggle,
-.input-group-btn:first-child > .btn:not(:first-child) {
-    border-left: 0 none;
-}
-.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
-    background-color: $black-states;
-    color: $default;
-    cursor: not-allowed;
-}
-
-.input-group-btn .btn{
-    border-width: $border-thin;
-    padding: $padding-btn-vertical  $padding-base-horizontal;
-}
-.input-group-btn .btn-default:not(.btn-fill){
-    border-color: $medium-gray;
-}
-
-.input-group-btn:last-child > .btn{
-    margin-left: 0;
-}
-
-textarea.form-control{
-    max-width: 100%;
-    max-height: 80px;
-    padding: 10px 10px 0 0;
-    resize: none;
-    border: none;
-    border-bottom: 1px solid lighten($black,5%);
-    border-radius: 0;
-    line-height: 2;
-
-    &:focus,
-    &:active{
-        border-left: none;
-        border-top: none;
-        border-right: none;
-    }
-}
-
-.has-success,
-.has-danger{
-
-    &.form-group .form-control,
-    &.form-group.no-border .form-control{
-        padding-right: $input-padding-horizontal + 21;
-    }
-}
-
-.form.form-newsletter .form-group{
-    float: left;
-    width: 78%;
-    margin-right: 2%;
-    margin-top: 9px;
-}
-
-.input-group .input-group-btn{
-    padding: 0 12px;
-}
-
-// Input files - hide actual input - requires specific markup in the sample.
-.form-group input[type=file] {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap; // For form validation feedback
+  align-items: stretch;
   width: 100%;
-  height: 100%;
-  z-index: 100;
+
+  > .form-control,
+  > .form-control-plaintext,
+  > .custom-select,
+  > .custom-file {
+    position: relative; // For focus state's z-index
+    flex: 1 1 auto;
+    // Add width 1% and flex-basis auto to ensure that button will not wrap out
+    // the column. Applies to IE Edge+ and Firefox. Chrome does not require this.
+    width: 1%;
+    margin-bottom: 0;
+
+    + .form-control,
+    + .custom-select,
+    + .custom-file {
+      margin-left: -$input-border-width;
+    }
+  }
+
+  // Bring the "active" form control to the top of surrounding elements
+  > .form-control:focus,
+  > .custom-select:focus,
+  > .custom-file .custom-file-input:focus ~ .custom-file-label {
+    z-index: 3;
+  }
+
+  // Bring the custom file input above the label
+  > .custom-file .custom-file-input:focus {
+    z-index: 4;
+  }
+
+  > .form-control,
+  > .custom-select {
+    &:not(:last-child) { @include border-right-radius(0); }
+    &:not(:first-child) { @include border-left-radius(0); }
+  }
+
+  // Custom file inputs have more complex markup, thus requiring different
+  // border-radius overrides.
+  > .custom-file {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) .custom-file-label,
+    &:not(:last-child) .custom-file-label::after { @include border-right-radius(0); }
+    &:not(:first-child) .custom-file-label { @include border-left-radius(0); }
+  }
 }
 
-.form-text{
-    font-size: $font-size-sm;
-    color: rgba($white,0.8);
-}
 
-.form-control-lg{
-    padding: 0;
-    font-size: inherit;
-    line-height: 0;
-    border-radius: 0;
+// Prepend and append
+//
+// While it requires one extra layer of HTML for each, dedicated prepend and
+// append elements allow us to 1) be less clever, 2) simplify our selectors, and
+// 3) support HTML5 form validation.
 
-    .form-control {
-      height: calc(2.875rem + 2px);
-    }
-}
-
-.form-horizontal{
-    .col-form-label,
-    .label-on-right{
-        padding: 10px 5px 0 15px;
-        text-align: right;
-        max-width: 180px;
-    }
-
-    .checkbox-radios{
-        margin-bottom: 15px;
-
-        .form-check:first-child{
-           margin-top: 8px;
-       }
-    }
-
-    .label-on-right{
-        text-align: left;
-        padding: 10px 15px 0 5px;
-    }
-
-    .form-check-inline{
-        margin-top: 6px;
-        .form-check-label{
-          margin-right: 1.5rem;
-        }
-    }
-}
-
-.search-bar{
-    margin-left: $margin-lg-vertical;
-      .btn{
-        margin: 0;
-      }
-       &.input-group{
-           border-radius: 25px;
-           z-index: 4;
-           margin-bottom: 0;
-           height: 43px;
-           padding-right: 5px;
-           .input-group-addon{
-              padding: 10px;
-               background: transparent;
-               border: none;
-               color: rgba(255, 255, 255, 0.7);
-
-           }
-
-           i{
-               font-size: 20px;
-               color: $white;
-               margin-top: 0 !important;
-           }
-           input{
-               background: transparent;
-               border:none !important;
-               border-radius: 0;
-               padding: 12px !important;
-               font-size: 12px;
-               opacity: 0.5;
-               &:focus{
-                   background: transparent;
-               }
-           }
-           .form-control{
-               opacity: 1;
-               color: $white;
-               &::placeholder{
-                 color: white;
-               }
-           }
-       }
-   }
-
-   .modal-search .modal-dialog{
-     max-width: 1000px;
-     margin: 20px auto;
-     .form-control{
-       border: none;
-       color: $black;
-       &::placeholder{
-         color: $black;
-       }
-     }
-   }
-
-.input-group-prepend{
-  margin-right: 0;
-}
 .input-group-prepend,
 .input-group-append {
-  .tim-icons {
-    font-size: $font-paragraph;
+  display: flex;
+
+  // Ensure buttons are always above inputs for more visually pleasing borders.
+  // This isn't needed for `.input-group-text` since it shares the same border-color
+  // as our inputs.
+  .btn {
+    position: relative;
+    z-index: 2;
+
+    &:focus {
+      z-index: 3;
+    }
   }
+
+  .btn + .btn,
+  .btn + .input-group-text,
+  .input-group-text + .input-group-text,
+  .input-group-text + .btn {
+    margin-left: -$input-border-width;
+  }
+}
+
+.input-group-prepend { margin-right: -$input-border-width; }
+.input-group-append { margin-left: -$input-border-width; }
+
+
+// Textual addons
+//
+// Serves as a catch-all element for any text or radio/checkbox input you wish
+// to prepend or append to an input.
+
+.input-group-text {
+  display: flex;
+  align-items: center;
+  padding: $input-padding-y $input-padding-x;
+  margin-bottom: 0; // Allow use of <label> elements by overriding our default margin-bottom
+  @include font-size($input-font-size); // Match inputs
+  font-weight: $font-weight-normal;
+  line-height: $input-line-height;
+  color: $input-group-addon-color;
+  text-align: center;
+  white-space: nowrap;
+  background-color: $input-group-addon-bg;
+  border: $input-border-width solid $input-group-addon-border-color;
+  @include border-radius($input-border-radius);
+
+  // Nuke default margins from checkboxes and radios to vertically center within.
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-top: 0;
+  }
+}
+
+
+// Sizing
+//
+// Remix the default form control sizing classes into new ones for easier
+// manipulation.
+
+.input-group-lg > .form-control:not(textarea),
+.input-group-lg > .custom-select {
+  height: $input-height-lg;
+}
+
+.input-group-lg > .form-control,
+.input-group-lg > .custom-select,
+.input-group-lg > .input-group-prepend > .input-group-text,
+.input-group-lg > .input-group-append > .input-group-text,
+.input-group-lg > .input-group-prepend > .btn,
+.input-group-lg > .input-group-append > .btn {
+  padding: $input-padding-y-lg $input-padding-x-lg;
+  @include font-size($input-font-size-lg);
+  line-height: $input-line-height-lg;
+  @include border-radius($input-border-radius-lg);
+}
+
+.input-group-sm > .form-control:not(textarea),
+.input-group-sm > .custom-select {
+  height: $input-height-sm;
+}
+
+.input-group-sm > .form-control,
+.input-group-sm > .custom-select,
+.input-group-sm > .input-group-prepend > .input-group-text,
+.input-group-sm > .input-group-append > .input-group-text,
+.input-group-sm > .input-group-prepend > .btn,
+.input-group-sm > .input-group-append > .btn {
+  padding: $input-padding-y-sm $input-padding-x-sm;
+  @include font-size($input-font-size-sm);
+  line-height: $input-line-height-sm;
+  @include border-radius($input-border-radius-sm);
+}
+
+.input-group-lg > .custom-select,
+.input-group-sm > .custom-select {
+  padding-right: $custom-select-padding-x + $custom-select-indicator-padding;
+}
+
+
+// Prepend and append rounded corners
+//
+// These rulesets must come after the sizing ones to properly override sm and lg
+// border-radius values when extending. They're more specific than we'd like
+// with the `.input-group >` part, but without it, we cannot override the sizing.
+
+
+.input-group > .input-group-prepend > .btn,
+.input-group > .input-group-prepend > .input-group-text,
+.input-group > .input-group-append:not(:last-child) > .btn,
+.input-group > .input-group-append:not(:last-child) > .input-group-text,
+.input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
+  @include border-right-radius(0);
+}
+
+.input-group > .input-group-append > .btn,
+.input-group > .input-group-append > .input-group-text,
+.input-group > .input-group-prepend:not(:first-child) > .btn,
+.input-group > .input-group-prepend:not(:first-child) > .input-group-text,
+.input-group > .input-group-prepend:first-child > .btn:not(:first-child),
+.input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
+  @include border-left-radius(0);
 }

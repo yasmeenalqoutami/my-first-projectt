@@ -1,105 +1,73 @@
-// Spacing columns vertically
+// stylelint-disable declaration-no-important
 
-.row.row-grid > [class*="col-"] + [class*="col-"] {
-    margin-top: 3rem;
-}
+// Margin and Padding
 
-@include media-breakpoint-up(lg) {
-    .row.row-grid > [class*="col-lg-"] + [class*="col-lg-"] {
-        margin-top: 0;
-    }
-}
-@include media-breakpoint-up(md) {
-    .row.row-grid > [class*="col-md-"] + [class*="col-md-"] {
-        margin-top: 0;
-    }
-}
-@include media-breakpoint-up(sm) {
-    .row.row-grid > [class*="col-sm-"] + [class*="col-sm-"] {
-        margin-top: 0;
-    }
-}
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-.row-grid + .row-grid {
-    margin-top: 3rem;
-}
-
-// Negative margins and paddings
-
-@media(min-width: 992px) {
-    [class*="mt--"],
-    [class*="mr--"],
-    [class*="mb--"],
-    [class*="ml--"] {
-        position: relative;
-        z-index: 5;
+    @each $prop, $abbrev in (margin: m, padding: p) {
+      @each $size, $length in $spacers {
+        .#{$abbrev}#{$infix}-#{$size} { #{$prop}: $length !important; }
+        .#{$abbrev}t#{$infix}-#{$size},
+        .#{$abbrev}y#{$infix}-#{$size} {
+          #{$prop}-top: $length !important;
+        }
+        .#{$abbrev}r#{$infix}-#{$size},
+        .#{$abbrev}x#{$infix}-#{$size} {
+          #{$prop}-right: $length !important;
+        }
+        .#{$abbrev}b#{$infix}-#{$size},
+        .#{$abbrev}y#{$infix}-#{$size} {
+          #{$prop}-bottom: $length !important;
+        }
+        .#{$abbrev}l#{$infix}-#{$size},
+        .#{$abbrev}x#{$infix}-#{$size} {
+          #{$prop}-left: $length !important;
+        }
+      }
     }
 
-
-    // Large negative margins in pixels
-
-    .mt--100 {
-        margin-top: -100px !important;
-    }
-    .mr--100 {
-        margin-right: -100px !important;
-    }
-    .mb--100 {
-        margin-bottom: -100px !important;
-    }
-    .ml--100 {
-        margin-left: -100px !important;
-    }
-    .mt--150 {
-        margin-top: -150px !important;
-    }
-    .mb--150 {
-        margin-bottom: -150px !important;
-    }
-    .mt--200 {
-        margin-top: -200px !important;
-    }
-    .mb--200 {
-        margin-bottom: -200px !important;
-    }
-    .mt--300 {
-        margin-top: -300px !important;
-    }
-    .mb--300 {
-        margin-bottom: -300px !important;
+    // Negative margins (e.g., where `.mb-n1` is negative version of `.mb-1`)
+    @each $size, $length in $spacers {
+      @if $size != 0 {
+        .m#{$infix}-n#{$size} { margin: -$length !important; }
+        .mt#{$infix}-n#{$size},
+        .my#{$infix}-n#{$size} {
+          margin-top: -$length !important;
+        }
+        .mr#{$infix}-n#{$size},
+        .mx#{$infix}-n#{$size} {
+          margin-right: -$length !important;
+        }
+        .mb#{$infix}-n#{$size},
+        .my#{$infix}-n#{$size} {
+          margin-bottom: -$length !important;
+        }
+        .ml#{$infix}-n#{$size},
+        .mx#{$infix}-n#{$size} {
+          margin-left: -$length !important;
+        }
+      }
     }
 
-
-    // Large margins in pixels
-
-    .pt-100 {
-        padding-top: 100px !important;
+    // Some special margin utils
+    .m#{$infix}-auto { margin: auto !important; }
+    .mt#{$infix}-auto,
+    .my#{$infix}-auto {
+      margin-top: auto !important;
     }
-    .pb-100 {
-        padding-bottom: 100px !important;
+    .mr#{$infix}-auto,
+    .mx#{$infix}-auto {
+      margin-right: auto !important;
     }
-    .pt-150 {
-        padding-top: 150px !important;
+    .mb#{$infix}-auto,
+    .my#{$infix}-auto {
+      margin-bottom: auto !important;
     }
-    .pb-150 {
-        padding-bottom: 150px !important;
+    .ml#{$infix}-auto,
+    .mx#{$infix}-auto {
+      margin-left: auto !important;
     }
-    .pt-200 {
-        padding-top: 200px !important;
-    }
-    .pb-200 {
-        padding-bottom: 200px !important;
-    }
-    .pt-250 {
-        padding-top: 250px !important;
-    }
-    .pb-250 {
-        padding-bottom: 250px !important;
-    }
-    .pt-300 {
-        padding-top: 300px!important;
-    }
-    .pb-300 {
-        padding-bottom: 300px!important;
-    }
+  }
 }

@@ -1,10 +1,6 @@
-[class*="shadow"] {
-	@if $enable-transitions {
-        transition: $transition-base;
-    }
-}
+// stylelint-disable declaration-no-important
 
-.shadow-sm--hover:hover { box-shadow: $box-shadow-sm !important; }
-.shadow--hover:hover { box-shadow: $box-shadow !important; }
-.shadow-lg--hover:hover { box-shadow: $box-shadow-lg !important; }
-.shadow-none--hover:hover { box-shadow: none !important; }
+.shadow-sm { box-shadow: $box-shadow-sm !important; }
+.shadow { box-shadow: $box-shadow !important; }
+.shadow-lg { box-shadow: $box-shadow-lg !important; }
+.shadow-none { box-shadow: none !important; }
